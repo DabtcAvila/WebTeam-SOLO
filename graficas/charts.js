@@ -105,12 +105,18 @@ function renderChart() {
       type: "bar",
       data: {
         labels: counts.labels,
-        datasets: [{ label: "Frecuencia", data: counts.values }]
+        datasets: [{ 
+          label: "Frecuencia", 
+          data: counts.values,
+          backgroundColor: 'rgba(54, 162, 235, 0.5)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1
+        }]
       },
       options: {
         responsive: true,
         plugins: { legend: { display: false } },
-        scales: { 
+        scales: {
           x: { ticks: { autoSkip: true, maxRotation: 45 } },
           y: { beginAtZero: true }
         }
@@ -132,7 +138,7 @@ function renderChart() {
       options: {
         responsive: true,
         plugins: { legend: { display: false } },
-        scales: { 
+        scales: {
           x: { ticks: { autoSkip: true, maxRotation: 45 } },
           y: { beginAtZero: true }
         }
@@ -152,14 +158,22 @@ function renderChart() {
         datasets: [{
           label: `${x} vs ${y}`,
           data: points,
-          pointRadius: 3
+          pointRadius: 3,
+          backgroundColor: 'rgba(255, 99, 132, 0.6)',
+          borderColor: 'rgba(255, 99, 132, 1)'
         }]
       },
       options: {
         responsive: true,
         scales: {
-          x: { title: { display: true, text: x } },
-          y: { title: { display: true, text: y } }
+          x: {
+            display: true,
+            title: { display: true, text: x }
+          },
+          y: {
+            display: true, 
+            title: { display: true, text: y }
+          }
         }
       }
     });
