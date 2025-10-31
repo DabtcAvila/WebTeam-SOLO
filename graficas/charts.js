@@ -108,9 +108,12 @@ function renderChart() {
         datasets: [{ label: "Frecuencia", data: counts.values }]
       },
       options: {
-        parsing: false,
+        responsive: true,
         plugins: { legend: { display: false } },
-        scales: { x: { ticks: { autoSkip: true, maxRotation: 45 } } }
+        scales: { 
+          x: { ticks: { autoSkip: true, maxRotation: 45 } },
+          y: { beginAtZero: true }
+        }
       }
     });
   }
@@ -127,9 +130,12 @@ function renderChart() {
         datasets: [{ label: "Frecuencia", data: counts }]
       },
       options: {
-        parsing: false,
+        responsive: true,
         plugins: { legend: { display: false } },
-        scales: { x: { ticks: { autoSkip: true, maxRotation: 45 } } }
+        scales: { 
+          x: { ticks: { autoSkip: true, maxRotation: 45 } },
+          y: { beginAtZero: true }
+        }
       }
     });
   }
@@ -150,7 +156,7 @@ function renderChart() {
         }]
       },
       options: {
-        parsing: false,
+        responsive: true,
         scales: {
           x: { title: { display: true, text: x } },
           y: { title: { display: true, text: y } }
