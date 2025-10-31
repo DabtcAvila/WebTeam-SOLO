@@ -38,6 +38,9 @@
                         <a class="nav-link text-dark" href="#analytics">Analytics</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-dark" href="#mariana-visualizations">Visualizaciones</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-dark" href="#equipo">Equipo</a>
                     </li>
                     <li class="nav-item">
@@ -100,12 +103,23 @@
                                     </div>
                                 </div>
                                 <div class="hero-actions">
-                                    <a href="demo-dashboard.html" class="btn btn-warning btn-lg me-3">
-                                        <i class="bi bi-building me-2"></i>Sistema Completo
-                                    </a>
-                                    <a href="#analytics" class="btn btn-outline-light btn-lg">
-                                        <i class="bi bi-graph-up me-2"></i>Analytics Avanzado
-                                    </a>
+                                    <div class="row g-2">
+                                        <div class="col-md-6">
+                                            <a href="demo-dashboard.html" class="btn btn-warning btn-lg w-100">
+                                                <i class="bi bi-speedometer2 me-2"></i>Analytics por David
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="graficas/" class="btn btn-success btn-lg w-100">
+                                                <i class="bi bi-bar-chart-line-fill me-2"></i>Visualizaciones por Mariana
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 text-center">
+                                        <a href="#integracion" class="btn btn-outline-light btn-lg">
+                                            <i class="bi bi-people me-2"></i>Ver Contribuciones del Equipo
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -293,47 +307,104 @@
                                     <div class="avatar-circle mx-auto mb-3">
                                         <img src="assets/img/mariana-profile.jpg" alt="Mariana Marquez Gil" class="profile-image">
                                     </div>
-                                    <h4 class="fw-bold text-primary mb-1">Mariana Marquez Gil</h4>
-                                    <p class="text-muted mb-0">Compañera de Equipo</p>
-                                    <span class="badge bg-success mt-2">Team Member</span>
+                                    <h4 class="fw-bold text-success mb-1">Mariana Marquez Gil</h4>
+                                    <p class="text-muted mb-0">Especialista en Visualización</p>
+                                    <span class="badge bg-success mt-2">Data Visualization Expert</span>
                                 </div>
                                 <div class="col-md-9">
-                                    <h5 class="fw-bold mb-3">Contribución: Desarrollo Colaborativo del Sistema de Seguros</h5>
+                                    <h5 class="fw-bold mb-3">Contribución: Sistema Avanzado de Visualización de Datos CSV</h5>
                                     <p class="text-muted mb-4">
-                                        <strong>Colaboradora clave del proyecto</strong> contribuyendo al desarrollo del sistema base de seguros. 
-                                        Trabajo en equipo para crear una plataforma integral de gestión de pólizas y reclamos, 
-                                        <strong>integrando componentes frontend y backend</strong> con arquitectura moderna y funcionalidades robustas.
+                                        <strong>Arquitecta principal del módulo de visualización interactiva</strong> que permite análisis dinámico 
+                                        del dataset de seguros con más de 1000 registros. Desarrolló un <strong>sistema completo de gráficas interactivas</strong> 
+                                        utilizando Chart.js 3.9.1 y PapaParse 5.4.1, con capacidades de análisis estadístico automático, 
+                                        <strong>detección inteligente de tipos de datos</strong> y generación de múltiples tipos de visualizaciones 
+                                        (barras, histogramas, dispersión) según la naturaleza de los datos seleccionados.
                                     </p>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="d-flex align-items-center">
-                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                                <span>Desarrollo Frontend</span>
+                                    
+                                    <!-- Características Técnicas Detalladas -->
+                                    <div class="mb-4">
+                                        <h6 class="fw-bold text-success mb-3">🎯 Características Técnicas Implementadas:</h6>
+                                        <div class="row g-2">
+                                            <div class="col-sm-6">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    <span><strong>Auto-detección de tipos:</strong> Numérica vs Categórica</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="d-flex align-items-center">
-                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                                <span>Integración Backend</span>
+                                            <div class="col-sm-6">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    <span><strong>Dropdowns dinámicos:</strong> Columnas X/Y pobladas automáticamente</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="d-flex align-items-center">
-                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                                <span>Gestión de Datos</span>
+                                            <div class="col-sm-6">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    <span><strong>Modo automático:</strong> Selección inteligente de gráfica</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="d-flex align-items-center">
-                                                <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                                <span>Colaboración de Equipo</span>
+                                            <div class="col-sm-6">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    <span><strong>Histogramas configurables:</strong> 10-40 bins ajustables</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    <span><strong>Análisis estadístico:</strong> Resumen automático de columnas</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    <span><strong>Carga CSV remota:</strong> Compatible con GitHub Pages</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Funcionalidades del Sistema -->
+                                    <div class="mb-4 p-3 bg-light rounded">
+                                        <h6 class="fw-bold text-success mb-2">📊 Funcionalidades del Sistema de Visualización:</h6>
+                                        <ul class="list-unstyled text-muted small mb-0">
+                                            <li><i class="bi bi-arrow-right text-success me-2"></i><strong>Gráficas de Barras:</strong> Análisis de frecuencias por categorías con ordenamiento automático</li>
+                                            <li><i class="bi bi-arrow-right text-success me-2"></i><strong>Histogramas Dinámicos:</strong> Distribución de variables numéricas con bins configurables</li>
+                                            <li><i class="bi bi-arrow-right text-success me-2"></i><strong>Scatter Plots:</strong> Correlaciones entre variables numéricas X e Y</li>
+                                            <li><i class="bi bi-arrow-right text-success me-2"></i><strong>Análisis Automático:</strong> Detección de tipos y sugerencia inteligente de visualización</li>
+                                            <li><i class="bi bi-arrow-right text-success me-2"></i><strong>Dataset Real:</strong> Análisis del dataset completo de seguros con 39 columnas</li>
+                                            <li><i class="bi bi-arrow-right text-success me-2"></i><strong>Interfaz Intuitiva:</strong> Controles simples con tooltips explicativos</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Tecnologías Utilizadas -->
+                                    <div class="mb-4">
+                                        <h6 class="fw-bold text-success mb-2">🛠️ Stack Tecnológico Implementado:</h6>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-warning text-dark">Chart.js 3.9.1</span>
+                                            <span class="badge bg-info">PapaParse 5.4.1</span>
+                                            <span class="badge bg-primary">JavaScript ES6+</span>
+                                            <span class="badge bg-secondary">HTML5 Semántico</span>
+                                            <span class="badge bg-success">CSS Grid & Flexbox</span>
+                                            <span class="badge bg-dark">GitHub Pages Ready</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Botones de Acción Prominentes -->
                                     <div class="mt-4">
-                                        <a href="graficas/" class="btn btn-success">
-                                            <i class="bi bi-bar-chart-line me-2"></i>Ver Gráficas Interactivas
-                                        </a>
+                                        <div class="row g-2">
+                                            <div class="col-md-6">
+                                                <a href="graficas/" class="btn btn-success btn-lg w-100 shadow">
+                                                    <i class="bi bi-bar-chart-line-fill me-2"></i>Explorar Visualizaciones Interactivas
+                                                </a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="https://raw.githubusercontent.com/DabtcAvila/WebTeam-SOLO/main/data/insurance_claims_clean.csv" 
+                                                   class="btn btn-outline-success btn-lg w-100" target="_blank">
+                                                    <i class="bi bi-download me-2"></i>Dataset de Seguros (CSV)
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -456,11 +527,11 @@
                                 <a href="code-viewer.html" class="btn btn-outline-primary me-2">
                                     <i class="bi bi-code me-2"></i>Ver Todo el Código
                                 </a>
-                                <a href="demo-dashboard.html" class="btn btn-outline-primary me-2">
-                                    <i class="bi bi-graph-up me-2"></i>Demo Avanzado
+                                <a href="demo-dashboard.html" class="btn btn-primary me-2">
+                                    <i class="bi bi-graph-up me-2"></i>Analytics de David
                                 </a>
-                                <a href="graficas/" class="btn btn-outline-success">
-                                    <i class="bi bi-bar-chart-line me-2"></i>Gráficas de Mariana
+                                <a href="graficas/" class="btn btn-success">
+                                    <i class="bi bi-bar-chart-line me-2"></i>Visualizaciones de Mariana
                                 </a>
                             </div>
                         </div>
@@ -552,6 +623,116 @@
         </div>
     </section>
 
+    <!-- Módulo de Visualización de Mariana -->
+    <section id="mariana-visualizations" class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-3">Sistema de Visualización Interactiva</h2>
+                    <p class="lead text-white-50">
+                        Módulo avanzado desarrollado por Mariana Marquez Gil para análisis visual completo del dataset de seguros
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="card bg-white text-dark h-100 shadow">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-bar-chart-line-fill text-success fs-2 me-3"></i>
+                                <h5 class="fw-bold mb-0">Gráficas de Barras</h5>
+                            </div>
+                            <p class="text-muted mb-3">Análisis de frecuencias por categorías con ordenamiento automático y visualización limpia.</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li>✓ Ordenamiento por frecuencia</li>
+                                <li>✓ Límite inteligente de categorías (40 máx)</li>
+                                <li>✓ Colores consistentes y profesionales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-white text-dark h-100 shadow">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-graph-up text-success fs-2 me-3"></i>
+                                <h5 class="fw-bold mb-0">Histogramas</h5>
+                            </div>
+                            <p class="text-muted mb-3">Distribuciones de variables numéricas con bins configurables de 10 a 40.</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li>✓ Bins configurables (10-40)</li>
+                                <li>✓ Etiquetas de rangos precisas</li>
+                                <li>✓ Análisis de distribución automático</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-white text-dark h-100 shadow">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-scatter-chart text-success fs-2 me-3"></i>
+                                <h5 class="fw-bold mb-0">Scatter Plots</h5>
+                            </div>
+                            <p class="text-muted mb-3">Análisis de correlaciones entre variables numéricas con puntos interactivos.</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li>✓ Correlaciones X vs Y</li>
+                                <li>✓ Filtrado de datos inválidos</li>
+                                <li>✓ Ejes con títulos descriptivos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card bg-white text-dark">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold text-success mb-3">🎯 Características Únicas del Sistema</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-cpu text-success me-2"></i>
+                                        <span><strong>Auto-detección de tipos:</strong> Numérica vs Categórica</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-magic text-success me-2"></i>
+                                        <span><strong>Modo automático:</strong> Selección inteligente de gráfica</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-list-task text-success me-2"></i>
+                                        <span><strong>Dropdowns dinámicos:</strong> Poblado automático de columnas</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-cloud-download text-success me-2"></i>
+                                        <span><strong>CSV remoto:</strong> Compatible con GitHub Pages</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                <a href="graficas/" class="btn btn-success btn-lg px-4">
+                                    <i class="bi bi-play-circle-fill me-2"></i>Explorar Sistema Completo
+                                </a>
+                                <a href="https://raw.githubusercontent.com/DabtcAvila/WebTeam-SOLO/main/data/insurance_claims_clean.csv" 
+                                   class="btn btn-outline-success btn-lg px-4" target="_blank">
+                                    <i class="bi bi-download me-2"></i>Descargar Dataset
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Equipo -->
     <section id="equipo" class="py-5">
         <div class="container">
@@ -598,14 +779,14 @@
                 <div class="col-lg-6">
                     <div class="team-card">
                         <div class="team-avatar">
-                            <i class="bi bi-heart"></i>
+                            <i class="bi bi-bar-chart-line-fill"></i>
                         </div>
                         <div class="team-info">
                             <h5 class="fw-bold">Mariana Márquez Gil</h5>
-                            <p class="text-info mb-2">Experiencia de Usuario</p>
+                            <p class="text-success mb-2">Especialista en Visualización de Datos</p>
                             <p class="text-muted">
-                                Diseño de experiencia de usuario, investigación de usabilidad, 
-                                prototipado de interfaces y optimización de flujos de usuario.
+                                Desarrollo completo del sistema de visualización interactiva, implementación de 
+                                Chart.js 3.9.1, análisis automático de tipos de datos y creación de gráficas dinámicas.
                             </p>
                         </div>
                     </div>
