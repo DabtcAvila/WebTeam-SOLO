@@ -1,6 +1,27 @@
 /* Custom Styles for Insurance System - Team 4 */
 /* Developed by David Fernando Ávila Díaz for academic project */
 
+/* Profile Image Styles */
+.avatar-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: var(--shadow-md);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 :root {
     --primary-color: #0d6efd;
     --secondary-color: #6c757d;
