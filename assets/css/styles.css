@@ -1,6 +1,26 @@
 /* Custom Styles for Insurance System - Team 4 */
 /* Developed by David Fernando Ávila Díaz for academic project */
 
+/* Pulse Animation for Mariana's Button */
+.pulse-animation {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.7);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 0 10px rgba(25, 135, 84, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(25, 135, 84, 0);
+    }
+}
+
 /* Profile Image Styles */
 .avatar-circle {
     width: 120px;
